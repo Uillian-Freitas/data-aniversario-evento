@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         
         <div class="container">
             <img class="hero__logo" src="./images/logo1.png" alt="aniversario">
-            <p class="hero__text">O maior aniversário que você já viu acontecerá daqui a 316d 17h 20min 56s</p>
+            <p class="hero__text">O maior aniversário que você já viu acontecerá daqui a <span id="contador"></span></p>
         <div class="infos-bar">
             <ul class="infos-bar__infos">
                 <li class="infos-bar__infos__item">
@@ -38,8 +38,8 @@
 
     </header>
 
-    <section class="event">
-        <div class="container">
+    <section class="event event--ritual" >
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">O Ritual da Noite</h2>
                 <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat velit earum distinctio hic necessitatibus in praesentium odit nulla voluptates, pariatur beatae non illum, magnam eveniet dignissimos excepturi expedita exercitationem!</p>
@@ -47,7 +47,35 @@
             <img class="event__image" src="./images/cat and the moon.jpg" alt="">
         </div>
     </section>
-
+    <section class="event event--espera event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">O Que Espera por Você</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat velit earum distinctio hic necessitatibus in praesentium odit nulla voluptates, pariatur beatae non illum, magnam eveniet dignissimos excepturi expedita exercitationem!</p>
+            </div>
+            <img class="event__image" src="./images/istockphoto-1411701868-612x612.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--entrada" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Código de Entrada</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat velit earum distinctio hic necessitatibus in praesentium odit nulla voluptates, pariatur beatae non illum, magnam eveniet dignissimos excepturi expedita exercitationem!</p>
+            </div>
+            <img class="event__image" src="./images/Feiticaria-na-Biblia-d.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--contagem event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">A Contagem se Aproxima</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat velit earum distinctio hic necessitatibus in praesentium odit nulla voluptates, pariatur beatae non illum, magnam eveniet dignissimos excepturi expedita exercitationem!</p>
+            </div>
+            <img class="event__image" src="./images/abracadabra_2.jpg" alt="">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="./scripts/main.js"></script>
+    
 </body>
 </html>

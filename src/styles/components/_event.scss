@@ -1,10 +1,32 @@
+@use '../components/variables' as v;
+
 .event{
     padding: 80px 0;
-    background-image: linear-gradient(180deg, #2d1b2f 0%, #1f1326 25%, #140d1a 50%, #0c0a12 75%, #050507 100%);
+    
+
+    &--ritual{
+    background-image: linear-gradient(v.$red, v.$purple);
+    }
+    &--espera{
+    background-image: linear-gradient(v.$purple, v.$blue);
+    }
+    &--entrada{
+    background-image: linear-gradient(v.$blue, v.$green);
+    }
+    &--contagem{
+    background-image: linear-gradient(v.$green, v.$blue);
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
 
 
     .container{
         display: flex;
+        gap: 40px;
     }
 
     &__image{
@@ -12,17 +34,17 @@
     }
 
     &__details{
-        margin-right: 40px;
+        
         &__title{
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 16px;
-            color: #fff;
+            color: v.$textTitle;
         }
 
         &__description{
             line-height: 22px;
-            color: #f5f5f5;
+            color: v.$textColor;
         }
     }
 
