@@ -174,7 +174,7 @@ Este projeto consolidou:
 ## 📌 Autor
 
 Desenvolvido por **Uillian de Freitas**
-Durante a formação de **Desenvolvedor Full Stack Java** — EBAC
+Durante a formação de **Desenvolvedor Full Stack Java** — EBAC.
 
 ---
 
